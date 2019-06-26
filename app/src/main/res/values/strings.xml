@@ -1,0 +1,16 @@
+<resources>
+
+    <string name="app_name">Astro</string>
+    <string name="action_settings">Settings</string>
+    <string name="map_name">Map</string>
+
+    <string-array name="roll_images">
+        <item>@drawable/roll1</item>
+        <item>@drawable/roll2</item>
+        <item>@drawable/roll3</item>
+        <item>@drawable/roll4</item>
+        <item>@drawable/roll5</item>
+        <item>@drawable/roll6</item>
+    </string-array>
+
+</resources>

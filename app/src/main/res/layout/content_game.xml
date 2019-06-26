@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.percent.PercentRelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".GameActivity"
+    tools:showIn="@layout/activity_game">
+
+    <RelativeLayout
+        android:id="@+id/user1"
+        app:layout_heightPercent="10%"
+        android:gravity="center"
+        app:layout_widthPercent="40%" >
+
+        <ImageView
+            android:id="@+id/icon1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/green"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/username1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/icon1"
+            android:text="大猪仔"
+            />
+
+        <TextView
+            android:id="@+id/charge1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/username1"
+            android:layout_alignLeft="@id/username1"
+            android:text=""
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user2"
+        app:layout_heightPercent="10%"
+        android:gravity="center"
+        android:layout_alignParentRight="true"
+        app:layout_widthPercent="40%">
+
+        <ImageView
+            android:id="@+id/icon2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/red"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/username2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/icon2"
+            android:text="大猪仔"
+            />
+
+        <TextView
+            android:id="@+id/charge2"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/username2"
+            android:layout_alignLeft="@id/username2"
+            android:text=""
+            />
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:src="@drawable/map"
+        android:scaleType="centerInside"
+        android:background="#ffffff"
+        android:layout_below="@id/user1"
+        app:layout_heightPercent="67%" />
+
+    <RelativeLayout
+        android:id="@+id/user3"
+        app:layout_heightPercent="10%"
+        android:layout_below="@id/map"
+        android:gravity="center"
+        app:layout_widthPercent="40%">
+
+        <ImageView
+            android:id="@+id/icon3"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/blue"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/username3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/icon3"
+            android:text="大猪仔"
+            />
+
+        <TextView
+            android:id="@+id/charge3"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/username3"
+            android:layout_alignLeft="@id/username3"
+            android:text=""
+            />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/user4"
+        app:layout_heightPercent="10%"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/map"
+        android:gravity="center"
+        app:layout_widthPercent="40%">
+
+        <ImageView
+            android:id="@+id/icon4"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/yellow"
+            android:layout_marginRight="10dp"
+            />
+
+        <TextView
+            android:id="@+id/username4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_toRightOf="@id/icon4"
+            android:text="大猪仔"
+            />
+
+        <TextView
+            android:id="@+id/charge4"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/username4"
+            android:layout_alignLeft="@id/username4"
+            android:text="(托管中)"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        app:layout_heightPercent="13%"
+        android:layout_below="@id/user3"
+        android:gravity="center"
+        app:layout_widthPercent="100%">
+
+        <ImageButton
+            android:id="@+id/play"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:scaleType="centerInside"
+            android:src="@drawable/play_click" />
+
+        <ImageButton
+            android:id="@+id/charge"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="center"
+            android:background="#ffffff"
+            android:scaleType="centerInside"
+            android:src="@drawable/charge_click" />
+
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

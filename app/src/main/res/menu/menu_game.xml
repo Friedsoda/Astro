@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.potatofriedbread.astro.GameActivity">
+
+    <item android:id="@+id/music"
+        android:title="music"
+        android:icon="@drawable/music"
+        app:showAsAction="ifRoom" />
+
+    <item android:id="@+id/setting"
+        android:title="setting"
+        android:icon="@drawable/setting"
+        app:showAsAction="ifRoom" />
+
+</menu>
